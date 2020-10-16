@@ -17,6 +17,8 @@
 
 		// Bowser.js 
 		device: result.platform.type,
+		deviceVendor: result.platform.vendor,
+		deviceModel: result.platform.model,
 		browserName: result.browser.name,
 		operatingSystem: result.os.name,
 
@@ -30,6 +32,8 @@
 	// var phoneEl = document.getElementById("el-phone");
 	// var tabletEl = document.getElementById("el-tablet");
 	var deviceEl = document.getElementById("el-device");
+	var deviceVendorEl = document.getElementById("el-device-vendor");
+	var deviceModelEl = document.getElementById("el-device-model");
 
 	var browserNameEl = document.getElementById("el-browser-name");
 	var operatingSystemEl = document.getElementById("el-operating-system");
@@ -41,6 +45,8 @@
 	// phoneEl.textContent = resultObject.phone;
 	// tabletEl.textContent = resultObject.tablet;
 	deviceEl.textContent = resultObject.device;
+	deviceVendorEl.textContent = resultObject.deviceVendor;
+	deviceModelEl.textContent = resultObject.deviceModel;
 
 	browserNameEl.textContent = resultObject.browserName;
 	operatingSystemEl.textContent = resultObject.operatingSystem;

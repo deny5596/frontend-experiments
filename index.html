@@ -7,14 +7,18 @@
 		<title>Mobile detect</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="style.css" />
-		<script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.min.js"></script>
+		
+
 	</head>
 
 	<body>
 		<div class="wrapper">
 			<div class="wrapper-item">
-				<h1 class="text-center padding-2">Mobile Detection</h1>
-				<h2 class="text-center padding-2 padding-b3">
+				<h1 class="text-center padding-2">Device Detection</h1>
+				<!-- <h2 class="text-center padding-2 padding-b3">
 					Desktop: <span id="el-desktop" class="d-inline-block margin-l1 font-normal"></span>
 				</h2>
 				<h2 class="text-center padding-2 padding-b3">
@@ -25,6 +29,9 @@
 				</h2>
 				<h2 class="text-center padding-2 padding-b3">
 					Tablet: <span id="el-tablet" class="d-inline-block margin-l1 font-normal"></span>
+				</h2> -->
+				<h2 class="text-center padding-2 padding-b3">
+					Device: <span id="el-device" class="d-inline-block margin-l1 font-normal"></span>
 				</h2>
 				<h2 class="text-center padding-2 padding-b3">
 					Browser Name: <span id="el-browser-name" class="d-inline-block margin-l1 font-normal"></span>

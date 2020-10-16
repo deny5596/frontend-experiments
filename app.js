@@ -1,26 +1,47 @@
-(function() {
-	var mobileDetectObject = new MobileDetect(window.navigator.userAgent);
+(function () {
+	// var mobileDetectObject = new MobileDetect(window.navigator.userAgent);
+
+	// Detect.js
+	// var result = detect.parse(window.navigator.userAgent);
+
+	// Bowser.js 
+	var result = bowser.getParser(window.navigator.userAgent).parsedResult;
+
 	var resultObject = {
-		desktop: "",
-		mobile: mobileDetectObject.mobile(),
-		phone: mobileDetectObject.phone(),
-		tablet: mobileDetectObject.tablet(),
-		browserName: mobileDetectObject.userAgent(),
-		operatingSystem: mobileDetectObject.os()
+		// desktop: "",
+		// mobile: mobileDetectObject.mobile(),
+		// phone: mobileDetectObject.phone(),
+		// tablet: mobileDetectObject.tablet(),
+		// browserName: mobileDetectObject.userAgent(),
+		// operatingSystem: mobileDetectObject.os(),
+
+		// Bowser.js 
+		device: result.platform.type,
+		browserName: result.browser.name,
+		operatingSystem: result.os.name,
+
+		// Detect.js
+		// device: result.device.type,
+		// browserName: result.browser.family,
+		// operatingSystem: result.os.family,
 	};
-	var desktopEl = document.getElementById("el-desktop");
-	var mobileEl = document.getElementById("el-mobile");
-	var phoneEl = document.getElementById("el-phone");
-	var tabletEl = document.getElementById("el-tablet");
+	// var desktopEl = document.getElementById("el-desktop");
+	// var mobileEl = document.getElementById("el-mobile");
+	// var phoneEl = document.getElementById("el-phone");
+	// var tabletEl = document.getElementById("el-tablet");
+	var deviceEl = document.getElementById("el-device");
+
 	var browserNameEl = document.getElementById("el-browser-name");
 	var operatingSystemEl = document.getElementById("el-operating-system");
 
 	console.log("resultobject: ", resultObject);
 
-	desktopEl.textContent = resultObject.desktop;
-	mobileEl.textContent = resultObject.mobile;
-	phoneEl.textContent = resultObject.phone;
-	tabletEl.textContent = resultObject.tablet;
+	// desktopEl.textContent = resultObject.desktop;
+	// mobileEl.textContent = resultObject.mobile;
+	// phoneEl.textContent = resultObject.phone;
+	// tabletEl.textContent = resultObject.tablet;
+	deviceEl.textContent = resultObject.device;
+
 	browserNameEl.textContent = resultObject.browserName;
 	operatingSystemEl.textContent = resultObject.operatingSystem;
 })();

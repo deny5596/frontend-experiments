@@ -3,9 +3,11 @@
 
 	// Detect.js
 	// var result = detect.parse(window.navigator.userAgent);
+	// console.log(result);
 
 	// Bowser.js 
 	var result = bowser.getParser(window.navigator.userAgent).parsedResult;
+	console.log(result);
 
 	var resultObject = {
 		// desktop: "",
@@ -15,6 +17,13 @@
 		// browserName: mobileDetectObject.userAgent(),
 		// operatingSystem: mobileDetectObject.os(),
 
+		// Detect.js
+		// device: result.device.type,
+		// deviceVendor: result.device.manufacturer,
+		// deviceModel: result.device.name,
+		// browserName: result.browser.family,
+		// operatingSystem: result.os.family,
+
 		// Bowser.js 
 		device: result.platform.type,
 		deviceVendor: result.platform.vendor,
@@ -22,10 +31,6 @@
 		browserName: result.browser.name,
 		operatingSystem: result.os.name,
 
-		// Detect.js
-		// device: result.device.type,
-		// browserName: result.browser.family,
-		// operatingSystem: result.os.family,
 	};
 	// var desktopEl = document.getElementById("el-desktop");
 	// var mobileEl = document.getElementById("el-mobile");

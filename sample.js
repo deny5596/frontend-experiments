@@ -1,6 +1,6 @@
 var autoplay = "muted";
 var videoOptions = {
-  autoplay: autoplay,
+  // autoplay: autoplay,
   sources: [{
     src: "//www.youtube.com/watch?v=EDuMsWYZm1M",
     type: "video/youtube"
@@ -22,7 +22,7 @@ var videoOptions = {
 var adPlayer = videojs("alc-video", videoOptions);
 var contentPlayer = document.getElementById("alc-video_youtube_api");
 
-if ((navigator.userAgent.match(/iPad/i) ||
+if ((navigator.userAgent.match(/iPhone|iPad/i) ||
   navigator.userAgent.match(/Android/i)) &&
   contentPlayer.hasAttribute('controls')) {
   contentPlayer.removeAttribute('controls');
@@ -62,7 +62,7 @@ var options = {
   debug: true,
 };
 
-adPlayer.ima(options);
+// adPlayer.ima(options);
 
 adPlayer.on(['loadstart', 'play', 'playing', 'firstplay', 'pause', 'ended', 'adplay', 'adplaying', 'adfirstplay', 'adpause', 'adended', 'contentplay', 'contentplaying', 'contentfirstplay', 'contentpause', 'contentended', 'contentupdate'], function (e) {
   console.warn('VIDEOJS player event: ', e.type);

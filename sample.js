@@ -68,11 +68,11 @@ adPlayer.on(['loadstart', 'play', 'playing', 'firstplay', 'pause', 'ended', 'adp
   console.warn('VIDEOJS player event: ', e.type);
 });
 
-adPlayer.on("adsready", function () {
-  if (navigator.userAgent.match(/iPhone/i)) {
-    var imaDom = document.getElementById("alc-video_ima-ad-container");
-    imaDom.style.display = 'none';
-    imaDom.style.left = '-10000px';
-    imaDom.style.top = '-10000px';
-  }
-});
+// adPlayer.on("adsready", function () {
+//   if (navigator.userAgent.match(/iPhone/i)) {
+//     var imaDom = document.getElementById("alc-video_ima-ad-container");
+//     imaDom.style.display = 'none';
+//     imaDom.style.left = '-10000px';
+//     imaDom.style.top = '-10000px';
+//   }
+// });

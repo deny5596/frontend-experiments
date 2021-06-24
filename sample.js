@@ -5,9 +5,9 @@ var videoOptions = {
     src: "//www.youtube.com/watch?v=EDuMsWYZm1M",
     type: "video/youtube"
   }],
-  controls: videojs.browser.IS_IPHONE ? false : true,
+  controls: true,
   youtube: {
-    ytControls: videojs.browser.IS_IPHONE ? 2 : 0, //1=YT control active
+    ytControls: 0, //1=YT control active
     playsinline: 1,
     showinfo: 1,
     rel: 1,

@@ -20,7 +20,7 @@ var videoOptions = {
   playbackRates: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
 };
 var adPlayer = videojs("alc-video", videoOptions);
-var contentPlayer = document.getElementById("alc-video_youtube_api");
+var contentPlayer = document.getElementById("alc-video_html5_api");
 
 if ((navigator.userAgent.match(/iPhone|iPad/i) ||
   navigator.userAgent.match(/Android/i)) &&

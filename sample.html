@@ -36,9 +36,17 @@
 
 <body>
   <div class="container">
-    <video id="alc-video" width="640px" height="360px" class="video-js vjs-default-skin vjs-big-play-centered"
+    <!-- <video id="alc-video" width="640px" height="360px" class="video-js vjs-default-skin vjs-big-play-centered"
       playsinline>
+    </video> -->
+    <video class="op-player__media" id="video" width="640px" height="360px" controls playsinline>
+      <source src="https://www.youtube.com/watch?v=xcJtL7QggTI" type="video/x-youtube">
     </video>
+
+    <p>If you like this Pen, please show your support to this project by giving it a star by clicking in the icon below.
+    </p>
+    <a class="github-button" href="https://github.com/openplayerjs/openplayerjs" data-size="large"
+      data-show-count="true" aria-label="Star openplayerjs/openplayerjs on GitHub">Star</a>
   </div>
 
   <script src="./sample.js"></script>

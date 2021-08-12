@@ -1,49 +1,48 @@
 * {
-	box-sizing: border-box;
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	position: relative;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 html,
 body {
-	height: 100%;
-	width: 100%;
+  height: auto;
+  width: auto;
 }
 
 .wrapper {
-	-webkit-box-align: center;
-	align-items: center;
-	background: aliceblue;
-	display: -webkit-box;
-	display: flex;
-	height: 100%;
-	-webkit-box-pack: center;
-	justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: aliceblue;
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 .wrapper .wrapper-item {
-	background: #ddd;
-	border-radius: 10px;
-	height: 100%;
-	position: relative;
-	width: 90%;
+  background: #ddd;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
 }
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 .padding-2 {
-	padding: 20px;
+  padding: 20px;
 }
 .padding-b3 {
-	padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 .margin-l1 {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 .d-inline-block {
-	display: inline-block;
+  display: inline-block;
 }
 .font-normal {
-	font-weight: normal;
+  font-weight: normal;
 }

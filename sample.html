@@ -5,17 +5,18 @@
   <title>Device Testing</title>
   <!-- unpkg : use the latest version of Video.js -->
   <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
-  <!-- <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
   <link href="https://unpkg.com/videojs-contrib-ads/dist/videojs.ads.css" rel="stylesheet">
   <link href="https://unpkg.com/videojs-contrib-ads/dist/videojs-contrib-ads.css" rel="stylesheet">
   <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
-  <script src="https://unpkg.com/videojs-ima/dist/videojs.ima.min.js"></script>
+  <!-- <script src="https://unpkg.com/videojs-ima/dist/videojs.ima.min.js"></script> -->
   <script src="https://unpkg.com/videojs-contrib-ads/dist/videojs-contrib-ads.min.js"></script>
   <script src="https://unpkg.com/videojs-contrib-ads/dist/videojs.ads.min.js"></script>
-  <script src="https://unpkg.com/videojs-youtube/dist/Youtube.min.js"></script> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openplayerjs@2.7.4/dist/openplayer.min.css">
+  <script src="https://unpkg.com/videojs-youtube/dist/Youtube.min.js"></script>
+  <script src="https://unpkg.com/videojs-ima-player@0.5.6/dist/videojs.ima.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openplayerjs@2.7.4/dist/openplayer.min.css">
   <script src="https://cdn.jsdelivr.net/npm/openplayerjs@2.7.4/dist/openplayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/openplayerjs-youtube@2.1.0/dist/openplayerjs-youtube.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/openplayerjs-youtube@2.1.0/dist/openplayerjs-youtube.js"></script> -->
   <script defer async src="./sample.js"></script>
 
   <style>
@@ -40,12 +41,13 @@
 
 <body>
   <div class="container">
-    <!-- <video id="alc-video" width="640px" height="360px" class="video-js vjs-default-skin vjs-big-play-centered"
+    <video id="alc-video" width="640px" height="360px" class="video-js vjs-default-skin vjs-big-play-centered"
       playsinline>
-    </video> -->
-    <video class="op-player__media" id="video" controls playsinline>
-      <source src="https://www.youtube.com/watch?v=xcJtL7QggTI" type="video/x-youtube">
     </video>
+    <div id="alc-video_ima-ad-container"></div>
+    <!-- <video class="op-player__media" id="video" controls playsinline>
+      <source src="https://www.youtube.com/watch?v=xcJtL7QggTI" type="video/x-youtube">
+    </video> -->
 
     <p>If you like this Pen, please show your support to this project by giving it a star by clicking in the icon below.
     </p>
